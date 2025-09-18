@@ -177,4 +177,5 @@ int main() { //inicio da função principal
     while (NewGamePlus == 'S' || NewGamePlus == 's');
    return 0;
 
-} //apresentou crash ao tentar usar no CMD tradicional do Windows, possivelmente erro com compiladores, várias outra versões tiveram o mesmo problema!
+}
+
