@@ -94,7 +94,8 @@ int main() { //inicio da função principal
         calcular_atributos(&Baralho[i]);
     }//função para calcular os atributos
 
-    int menu, player, cpu, atributo1, atributo2; //variaveis
+    int menu, player, cpu, atributo1, atributo2;
+    char NewGamePlus = 's';                                                 //variaveis
 
     srand(time(0));
     printf("Bem-vindo ao Super Trunfo!\n");
@@ -170,5 +171,10 @@ int main() { //inicio da função principal
             printf("Eu sou inevitavel!\n");
         }
     };
+    printf("--------------------------\n");
+    printf("Deseja jogar novamente (S/N)?");
+    scanf(" %c", &NewGamePlus);
+    while (NewGamePlus == 'S' || NewGamePlus == 's');
    return 0;
+
 } //apresentou crash ao tentar usar no CMD tradicional do Windows, possivelmente erro com compiladores, várias outra versões tiveram o mesmo problema!
